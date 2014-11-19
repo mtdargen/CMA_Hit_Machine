@@ -3,7 +3,7 @@ CMA_Hit_Machine
 
 generate the next smash hit country song
 
-You can run "country.py" for instant fun, or add your fav contry songs to the "songs.txt" file, run "songlines.py", and then run "country.py" for slightly delayed but more personal fun
+You can run "country.py" for instant fun, or add your fav country songs to the "songs.txt" file, run "songlines.py", and then run "country.py" for slightly delayed but more personal fun
 
 What's inside:
   * country.py - main program
