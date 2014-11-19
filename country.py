@@ -5,8 +5,8 @@ import random
 
 
 def main():
-
     #initializing junk
+    formatSongs()
     lines = open("country_lines.txt",'r')
     r = random.Random()
     min_len = 5
@@ -39,5 +39,25 @@ def main():
         #print verse
         for l in verse:
             print(l)
+
+def formatSongs():
+    fi = open("songs.txt","r")
+    fo = open("country_lines.txt","w")
+
+    lines = fi.read().split("\n")
+
+    for l in lines:
+        l = l.replace(".","")
+        l = l.replace(",","")
+        i = 0
+        if len(l) > 1:
+            i = i%4
+            if i == 0:
+                fo.write("<l> ")
+            i += 1
+            fo.write(l + "\n")
+
+    fi.close()
+    fo.close()
 
 main()
